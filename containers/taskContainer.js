@@ -1,11 +1,11 @@
 import Container from "./container"
 
-const TaskContainer = ({ className, addingTask, setAddingTask }) => {
+const TaskContainer = ({ className, addingTask }) => {
   return (
     <Container className={className}>
       <div>Task Container</div>
       {
-        addingTask ? <div>Adding task</div> : <button onClick={() => setAddingTask(true)}>Add Task View</button>
+        addingTask ? <div>Adding task</div> : null
       }
     </Container>
   )
