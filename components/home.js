@@ -16,7 +16,7 @@ const Home = () => {
           ? (
             <div className="flex flex-row h-full">
               <div className="flex flex-col w-full h-full">
-                <TaskContainer className="h-full" addingTask={addingTask} />
+                <TaskContainer className="h-full" addingTask={addingTask} setAddingTask={setAddingTask}/>
                 <BarContainer className="h-1/3" setAddingTask={setAddingTask} />
               </div>
               <BotContainer expanded className="w-1/3" setExpanded={setExpanded} />
@@ -24,7 +24,7 @@ const Home = () => {
           ) 
           : (
             <div className="flex flex-col h-full">
-              <TaskContainer className="h-full" addingTask={addingTask} />
+              <TaskContainer className="h-full" addingTask={addingTask} setAddingTask={setAddingTask}/>
               <div className="flex flex-row h-1/3">
                 <BarContainer className="w-full" setAddingTask={setAddingTask}/>
                 <BotContainer className="w-1/3" setExpanded={setExpanded} />

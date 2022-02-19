@@ -1,7 +1,7 @@
 const NavBar = ({ setAddingTask }) => {
   return (
     <div className="bg-white shadow-md h-14 p-4">
-      <button onClick={() => setAddingTask(false)}>STATERA</button>
+      <button className="uppercase font-bold text-2xl" onClick={() => setAddingTask(false)}>STATERA</button>
     </div>
   )
 }
